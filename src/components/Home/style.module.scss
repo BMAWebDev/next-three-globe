@@ -1,0 +1,80 @@
+#homepage {
+  text-align: center;
+
+  .buttonContainer {
+    button {
+      background: hsla(0, 0%, 100%, 0.1);
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+      padding: 20px 36px;
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 10px;
+
+      &:hover {
+        background-color: #f6ca53;
+        color: #000;
+      }
+    }
+  }
+
+  #gridView {
+    .partnerMasterContainer {
+      border: 1px solid grey;
+      border-radius: 10px;
+      padding: 20px;
+    }
+  }
+
+  #globalView {
+    position: relative;
+
+    .dragContainer {
+      text-align: center;
+      transform: translate(-50%, -50%);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+    }
+
+    #markerLabel {
+      color: #fff;
+      max-width: 250px;
+      line-height: 25px;
+      border: 1.5px solid #f6ca53;
+      padding: 15px;
+      border-radius: 8px;
+      font-family: Arial;
+      backdrop-filter: blur(10px);
+      top: -128px;
+      left: -19px;
+
+      .content {
+        #logo {
+          max-width: 100%;
+          max-height: 35px;
+        }
+
+        #description {
+          margin: 5px 0 10px 0;
+          max-height: 100px;
+          overflow-y: scroll;
+
+          &::-webkit-scrollbar {
+            display: none;
+          }
+        }
+      }
+
+      #bottomLine {
+        height: 30px;
+        width: 2px;
+        background: #f6ca53;
+        position: absolute;
+        left: 141px;
+        bottom: -30px;
+      }
+    }
+  }
+}
